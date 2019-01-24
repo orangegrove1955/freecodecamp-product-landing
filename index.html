@@ -1,23 +1,43 @@
 <html>
     <head>
         <title>Product Landing</title>
-        <style>
-            header{
-                position: fixed;
-                top: 0;
-                padding: 0 20px;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <header id="header">
             <div class="logo">
-                
+
             </div>
             <nav id="nav-bar">
-
+                <ul style="list-style: none">
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
             </nav>
         </header>
+        <section id="hero">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email for more info" required="">
+                <input id="submit" type="submit" value="Get Started" class="btn">
+            </form>
+        </section>
+        <div class="main">
+            <section id="features">
+
+            </section>
+            <section id="pricing">
+                <div class="priceBox"></div>
+                <div class="priceBox"></div>
+                <div class="priceBox"></div>
+            </section>
+            <section id="contact">
+
+            </section>
+        </div>
+        <footer>
+
+        </footer>
     </body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
