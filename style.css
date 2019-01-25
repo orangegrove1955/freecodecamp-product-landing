@@ -1,11 +1,171 @@
-header{
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+#header{
     position: fixed;
     top: 0;
     padding: 0 20px;
+    width: 100vw;
+    background-color: rgb(221, 221, 221);
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+@media (max-width: 600px){
+    #header{
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 100vw;
+        justify-items: center;
+    }
+    #hero{
+        background-image: url('https://ehq-production-australia.imgix.net/d34db7ef0361f3ef5616da7e832229fc4a90d55d/photos/images/000/002/598/large/Route_96_tram_at_Acland_Street.jpg?auto=compress&fit=crop');
+    }
+    #video{
+        width: 75vw;
+        height: 20vh;
+    }
+    #social-list{
+        margin-right: 0;
+    }
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Melbourne_Tram_E-Class_6007.jpg/2560px-Melbourne_Tram_E-Class_6007.jpg');
+}
+
+#form{
+    width: 35vw;
+    margin-top: 5rem;
+}
+
+.logo{
+    width: 65vw;
+}
+
+#header-img{
+    height: 8vh;
+    padding: 16px;
+}
+
+.btn{
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#nav-list{
+    display: flex;
+    width: 35vw;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 400;
+    margin-right: 5vw;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
 }
 
 .main{
     width: 100%;
-    background-color: blue;
-    max-width: 1000px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#email{
+    width: 100%;
+    height: 2rem;
+}
+
+#submit{
+    margin-top: 1rem;
+    width: 85%;
+    height: 2rem;
+}
+
+#features{
+    padding: 2rem;
+    background-size: cover;
+    background-image: url('https://www.muralswallpaper.com/app/uploads/mint-geometric-design%EF%BB%BF-plain-1.jpg');
+}
+
+#video{
+    height: 75vh;
+    width: 75vw;
+    box-shadow: 0 8px 5px rgba(57, 63, 72, 0.3);
+}
+
+#pricing{
+    padding: 2rem;
+    background-size: cover;
+    background-image: url('https://previews.123rf.com/images/audiohead/audiohead1305/audiohead130500025/19628877-fictitious-city-public-transport-scheme-on-white-background.jpg');
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.priceBox{
+    width: 20vw;
+    padding: 20px;
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background-color: rgb(152, 230, 121);
+}
+
+.card-body{
+    margin-bottom: 10px;
+}
+
+footer{
+    padding: 0 20px;
+    width: 100vw;
+    background-color: rgb(221, 221, 221);
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    float: left;
+    width: 90vw;
+}
+
+.social{
+    float: right;
+    text-align: right;
+}
+
+#social-list{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    margin-right: 2.5rem;
+}
+
+#social-list li{
+    padding: 5px;
+    font-size: 2.5rem;
 }
