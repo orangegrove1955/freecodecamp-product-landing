@@ -31,9 +31,6 @@
         width: 75vw;
         height: 20vh;
     }
-    #social-list{
-        margin-right: 0;
-    }
 }
 
 #hero {
@@ -73,7 +70,6 @@
     flex-direction: row;
     justify-content: space-around;
     font-weight: 400;
-    margin-right: 5vw;
 }
 
 .nav-link{
@@ -141,7 +137,6 @@ body{
 
 footer{
     padding: 0 20px;
-    width: 100vw;
     background-color: rgb(221, 221, 221);
     min-height: 75px;
     display: flex;
@@ -162,7 +157,6 @@ footer{
     display: flex;
     flex-direction: row;
     font-weight: 400;
-    margin-right: 2.5rem;
 }
 
 #social-list li{
